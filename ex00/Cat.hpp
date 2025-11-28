@@ -5,15 +5,13 @@
 
 class Cat: public Animal
 {
-    private:
-        Animal::type_;
     public:
         Cat(void);
         Cat(Cat const &other);
         Cat &operator=(Cat const &other);
         ~Cat(void);
-        void makeSound(void) override;
-        std::string getType(void);
+        void makeSound(void) const override;
+        std::string getType(void) const override;
 };
 
 #endif

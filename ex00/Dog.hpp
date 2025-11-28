@@ -7,14 +7,13 @@
 
 class Dog : virtual Animal
 {
-    private:
-        Animal::type_;
     public:
         Dog(void);
         Dog(Dog const &other);
         Dog const &operator=(Dog const &other);
         ~Dog(void);
-        void makeSound(void) override;
+        void makeSound(void) const;
+        std::string getType(void) const override;
 };
 
 #endif

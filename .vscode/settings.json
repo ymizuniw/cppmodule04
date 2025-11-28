@@ -48,6 +48,8 @@
         "sstream": "cpp",
         "dog.hpp": "c",
         "animal.hpp": "c",
-        "cat.hpp": "c"
+        "cat.hpp": "c",
+        "ctime": "cpp",
+        "iomanip": "cpp"
     }
 }
