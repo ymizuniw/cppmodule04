@@ -8,7 +8,7 @@ SRCS=\
 	Cat.hpp\
 	Dog.cpp\
 	Dog.hpp\
-	main.c\
+	main.cpp\
 	WrongAnimal.cpp\
 	WrongAnimal.hpp\
 	WrongCat.cpp\
