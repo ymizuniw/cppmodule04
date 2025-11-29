@@ -12,11 +12,12 @@ class AMateria
         AMateria(void);
         AMateria(AMateria const &materia);
         AMateria &operator=(AMateria const &materia);
-        ~AMateria(void);
+        virtual ~AMateria(void);
         AMateria(std::string const &type);
         std::string const &getType(void) const;
         virtual AMateria *clone(void) const = 0;
-        virtual void use(ICharacter &target);
+        virtual void use(ICharacter &target) = 0;
 };
 
 #endif
+

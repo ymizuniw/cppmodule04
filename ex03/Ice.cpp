@@ -38,7 +38,7 @@ AMateria *Ice::clone(void) const
     return (cp_ice);
 }
 
-void AMateria::use(ICharacter &target)
+void Ice::use(ICharacter &target)
 {
     std::cout << "* heals " 
         << target.getName() << "'s wounds" << std::endl;

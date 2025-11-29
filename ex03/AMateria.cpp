@@ -11,6 +11,11 @@ AMateria::AMateria(AMateria const &other) : type_(other.type_)
     print_msg("AMateria copy-construcotr called.");
 }
 
+AMateria::~AMateria(void)
+{
+    print_msg("AMateria destructor called.");
+}
+
 AMateria &AMateria::operator=(AMateria const &other)
 {
     if (this!=&other)
