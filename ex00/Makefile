@@ -13,12 +13,14 @@ SRCS=\
 	WrongAnimal.hpp\
 	WrongCat.cpp\
 	WrongCat.hpp
-OBJS=$(SRCS:.cpp=.o)
 
+OBJS=$(SRCS:.cpp=.o)
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $^ -o $@
+	$(CC) $(CFLAGS) -o $@
 %.o: %.c
-	$(CC) $(CFLAGS) -c $<
+	$(CC) $(CFLAGS) -c $< -o $@
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< -o $@
 all: $(NAME)
 clean:
 	rm -f $(OBJS)
