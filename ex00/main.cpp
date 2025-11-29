@@ -1,6 +1,7 @@
 #include "Animal.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
+#include "WrongAnimal.hpp"
 
 // For every exercise, you have to provide the most complete tests you can.
 // Constructors and destructors of each class must display specific messages. Don’t use the
@@ -31,6 +32,9 @@ int main(void)
     const Animal* meta = new Animal();
     const Animal* j = new Dog();
     const Animal* i = new Cat();
+    const WrongAnimal *wa= new WrongAnimal();
+    const WrongAnimal *wc=new WrongCat();
+
     std::cout << j->getType() << " " << std::endl;
     std::cout << i->getType() << " " << std::endl;
     i->makeSound(); //will output the cat sound!

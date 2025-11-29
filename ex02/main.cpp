@@ -50,9 +50,9 @@ int main(void)
     for (size_t i=0; i<arrSize;i++)
         delete (arr[i]);
     delete (arr);
-
     // AbstractAnimal animal = Animal();this cannot compile.
-    WrongCat wrong_cat = WrongCat();
-    wrong_cat.makeSound();//this should be meaow initially, but if abstract,it won't. 
+    WrongAnimal *wrong_cat = new WrongCat();
+    wrong_cat->makeSound();//this should be meaow initially, but if abstract,it won't. 
+    delete (wrong_cat);
     return 0;
 }
