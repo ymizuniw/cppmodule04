@@ -5,7 +5,7 @@
 #include <iostream>
 #include <iomanip>
 
-class Dog : virtual Animal
+class Dog : public Animal
 {
     public:
         Dog(void);
@@ -13,7 +13,6 @@ class Dog : virtual Animal
         Dog const &operator=(Dog const &other);
         ~Dog(void);
         void makeSound(void) const;
-        std::string getType(void) const override;
 };
 
 #endif
